@@ -1,0 +1,22 @@
+{
+  "name": "ng-typings",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "typings": "^0.7.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhodeN/typings.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KhodeN/typings/issues"
+  },
+  "homepage": "https://github.com/KhodeN/typings#readme"
+}

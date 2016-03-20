@@ -7,19 +7,21 @@ declare namespace angular {
         type Checker = (stateParams?: ng.ui.IStateParamsService, name?: string) => boolean | ng.IPromise<any>;
 
         interface IPermissionStore extends IStore {
-            definePermission(name: string,
-				handler: Checker): void;
+            definePermission(name: string, handler: Checker): void;
             hasPermissionDefinition(name: string): boolean;
-            defineManyPermissions(names: string[],
-				handler: Checker): void;
+            defineManyPermissions(names: string[], handler: Checker): void;
 
             removePermissionDefinition(permission: string): void;
         }
 
+        interface IStatePermissions {
+            except: string[];
+            only: string[];
+            redirectTo: string;
+        }
+
         interface IRoleStore extends IStore {
-            defineRole(name: string,
-				subRoles: string[],
-				handler?: Checker): void;
+            defineRole(name: string, subRoles: string[], handler?: Checker): void;
             removeRoleDefinition(name: string): void;
         }
     }
